@@ -55,11 +55,13 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'database'  => 'lnl',
+			'username'  => 'root',
+			'password'  => 'root',
 			'charset'   => 'utf8',
+            'port'      => '8889',
 			'collation' => 'utf8_unicode_ci',
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
 			'prefix'    => '',
 		],
 

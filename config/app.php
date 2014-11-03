@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
 
 	'key' => '0HvRK28GnA6TN1JFlqov2ZducxWDJXQe',
 
-	'cipher' => MCRYPT_RIJNDAEL_128,
+	'cipher' => 'rijndael-128',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -125,6 +125,8 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+
+        'Illuminate\Html\HtmlServiceProvider',
 
 	],
 
@@ -183,6 +185,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+        'Form'      => 'Illuminate\Html\FormFacade',
 
 	],
 

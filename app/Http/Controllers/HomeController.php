@@ -16,11 +16,11 @@ class HomeController extends Controller {
 	*/
 
 	/**
-	 * @Get("/")
+	 *
 	 */
 	public function index()
 	{
-		return view('hello');
+		return view('templates.hello');
 	}
 
 }

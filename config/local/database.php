@@ -25,6 +25,7 @@ return [
 			'host'      => 'localhost',
 			'database'  => 'homestead',
 			'username'  => 'homestead',
+            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
 			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
