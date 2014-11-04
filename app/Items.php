@@ -8,9 +8,12 @@ class Items extends Eloquent {
     protected $table = 'items';
     protected $primaryKey = 'id';
 
-    public function meta() {
-        return $this->hasMany('App\Item_Meta','item_id','id');
+
+    public function meta()
+    {
+        return $this->belongsTo('App\Item_Meta','id','item_id');
     }
+
     protected $fillable = [
 
         'title',

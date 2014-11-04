@@ -8,6 +8,8 @@ class Item_Meta extends Eloquent {
     protected $table = 'item_meta';
     protected $primaryKey = 'id';
 
+
+
     protected $fillable = [
 
         'meta_key',
@@ -15,9 +17,6 @@ class Item_Meta extends Eloquent {
         'item_id'
     ];
 
-    public function meta() {
-        return $this->belongsTo('Items');
-    }
 
 
 

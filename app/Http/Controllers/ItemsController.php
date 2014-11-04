@@ -25,7 +25,7 @@ class ItemsController extends Controller {
 		//
         //$categories = ['test','test1'];
         $item = $this->item->get();
-        dd("sdads");
+
         //dd($categories);
 
         return view('templates.category-list',compact('item'));
@@ -67,12 +67,13 @@ class ItemsController extends Controller {
 	{
         //$categories = Categories::find($id);
        // $categories = Categories::whereSlug($slug)->first();
-    dd("dasads");
-        dd($request->get('slug'));
+
+        //dd($item);
        // dd($item->whereSlug($slug)->get());
         //dd(Items::find(1)->meta);
         // $item->meta = $item->;
         //dd(Items::find(1)->meta);
+
 
         return view('templates.category', compact('item'));
 	}
