@@ -1,13 +1,13 @@
 <?php namespace App\Http\Controllers;
 
+use App\Categories;
 use Illuminate\Routing\Controller;
-use App\Items;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class ItemsController extends Controller {
+class CategoryController extends Controller {
 
-    public function __construct(Items $item) {
+    public function __construct(Categories $item) {
 
         $this->item = $item;
 
@@ -48,7 +48,7 @@ class ItemsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(Request $request, Items $items)
+	public function store(Request $request, Categories $items)
 	{
 		$items->create($request->all());
 
@@ -63,7 +63,7 @@ class ItemsController extends Controller {
 	 * @return Response
      *
 	 */
-	public function show(Items $item, Request $request)
+	public function show(Categories $item, Request $request)
 	{
         //$categories = Categories::find($id);
        // $categories = Categories::whereSlug($slug)->first();
@@ -74,7 +74,8 @@ class ItemsController extends Controller {
         // $item->meta = $item->;
         //dd(Items::find(1)->meta);
 
-        dd($item);
+
+
 
         return view('templates.category', compact('item'));
 	}
@@ -85,7 +86,7 @@ class ItemsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit(Item $item)
+	public function edit(Category $item)
 	{
 
         return view('templates.category-edit', compact('item'));
@@ -97,7 +98,7 @@ class ItemsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update(Items $item, Request $request)
+	public function update(Categories $item, Request $request)
 	{
 
         //$category = $this->category->whereId($slug)->first();

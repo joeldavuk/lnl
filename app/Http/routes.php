@@ -15,15 +15,30 @@ Route::bind('slug', function($slug) {
 
     $items = App\Items::with('meta')->where('slug',$slug)->first();
 
-   // $items->with('meta')-first();
-
-
     if(empty($items)) {
-        return View::make('404');
+        return Response::view('error.404', [], 404);
     }
     return $items;
 
 });
+Route::bind('category', function ($slug) {
+    $item = App\Categories::where('slug', $slug)->first();
+
+    if (empty($item)) {
+        //return Response::view('error.404', [], 404);
+    }
+
+    return $item;
+});
+
+Route::bind('subcategory', function ($slug, $route) {
+
+   // $category = $route->parameter('category');
+    $item = App\Categories::where('slug', $slug)->first();
+    //if (empty($item))   return Response::view('error.404', [], 404);
+    return $item; // shortcut of if
+});
+
 
 /*
 
@@ -36,7 +51,45 @@ Route::patch('/category/{id}','CategoryController@update');
 
 //Route::model('slug','Items');
 //Route::model('item', 'App\Items');
-Route::get('/{slug}','ItemsController@show');
+/*
+Route::get('{one}/{two}', function($one, $two)
+{
+    return 'two: ' . $one . ', ' . $two;
+});
+Route::get('{one}', function($one)
+{
+    return 'one: ' . $one;
+});
+*/
+Route::filter('cat', function($route,$request)
+{
+
+    // @todo cleanup this mess and add parent checks
+    if(count($request->segments()) > 1) {
+        $item = App\Categories::where('slug', $request->segments()[1])->first();
+        if(empty($item)) {
+            return Response::view('error.404', [], 404);
+        }
+    }
+    if(count($request->segments()) < 2) {
+        $item = App\Categories::where('slug', $request->segments()[0])->first();
+        if(empty($item)) {
+            return Response::view('error.404', [], 404);
+        }
+    }
+
+});
+Route::filter('item', function()
+{
+
+    //
+});
+//Route::get('/{slug-a}/{slug-b}','CategoryController@show');
+
+Route::get('/{slug}.html', array('before' => 'item', 'uses' => 'ItemsController@show'));
+//Route::get('/{slug}','CategoryController@show');
+Route::get('/{category}/{subcategory?}', array('before' => 'cat', 'uses' => 'CategoryController@show'));
+//Route::get('/{slug}.html','ItemsController@show');
 
 //Route::model('cat', 'App\Categories');
 

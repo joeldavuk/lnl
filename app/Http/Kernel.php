@@ -26,16 +26,20 @@ class Kernel extends HttpKernel {
 	 * @param  \Illuminate\Http\Request  $request
 	 * @return \Illuminate\Http\Response
 	 */
-	public function handle($request)
-	{
-		try
-		{
-			return parent::handle($request);
-		}
-		catch (Exception $e)
-		{
-			throw $e;
-		}
-	}
+    public function handle($request)
+    {
+        try
+        {
+            return parent::handle($request);
+        }
+        catch(\Symfony\Component\HttpKernel\Exception\NotFoundHttpException $e)
+        {
+            return $this->app->make('Illuminate\Routing\ResponseFactory')->view('error.404', [], 404);
+        }
+        catch (Exception $e)
+        {
+            throw $e;
+        }
+    }
 
 }

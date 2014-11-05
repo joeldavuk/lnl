@@ -4,6 +4,9 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Categories extends Eloquent {
 
+    protected $table = 'categories';
+    protected $primaryKey = 'id';
+
     protected $fillable = [
 
         'title'
