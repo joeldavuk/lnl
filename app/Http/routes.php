@@ -21,24 +21,39 @@ Route::bind('slug', function($slug) {
     return $items;
 
 });
-Route::bind('category', function ($slug) {
-    $item = App\Categories::where('slug', $slug)->first();
 
-    if (empty($item)) {
-        //return Response::view('error.404', [], 404);
-    }
+
+
+Route::bind('category', function () {
+
+    if(!Request::segment(2)) {
+        /**
+    $item = App\Categories::with(array('categories' => function($query)
+        {
+            $query->where('category_relationship.type_of', '=', 'child');
+        }))->where('slug', Request::segment(1))->first();
+
 
     return $item;
+         * **/
+    }
 });
 
-Route::bind('subcategory', function ($slug, $route) {
+Route::bind('subcategory', function () {
 
-   // $category = $route->parameter('category');
-    $item = App\Categories::where('slug', $slug)->first();
-    //if (empty($item))   return Response::view('error.404', [], 404);
-    return $item; // shortcut of if
+    if(Request::segment(2)) {
+    $item = App\Categories::with(array('categoryRelations' => function($query)
+        {
+            $query->where('category_relationship.type_of', '=', 'child')->with('categoryData');
+        }))->where('slug', Request::segment(2))->first();
+
+
+    return $item;
+    }
 });
 
+
+Route::get('/','HomeController@index');
 
 /*
 
@@ -61,22 +76,64 @@ Route::get('{one}', function($one)
     return 'one: ' . $one;
 });
 */
+
+
 Route::filter('cat', function($route,$request)
 {
-
-    // @todo cleanup this mess and add parent checks
+    /**
+    //subcategory
     if(count($request->segments()) > 1) {
-        $item = App\Categories::where('slug', $request->segments()[1])->first();
+
+
+        $item = App\Categories::with(array('itemData','categories' => function($query)
+            {
+               // $query->where('type_of', 'like', '%category%');
+                $query->where('category_relationship.type_of', '=', 'child');
+
+            }))->where('slug', $request->segments()[1])->first();
+
+
+
+        //get all children of the sub category
+
+        $children = DB::table('categories')
+            ->join('category_relationship', 'category_id', '=', 'categories.id')
+            ->join('items', 'category_id', '=', 'categories.id')
+            ->where('categories.slug', '=',  $request->segments()[1])
+            ->where('category_relationship.type_of', '=', 'child')
+            ->get();
+
+
+
+
+
+
+
+        foreach($children as $child) {
+            $child_ids[] = $child->base_category_id;
+        }
+
+        $item = DB::table('categories')
+            ->whereIn('categories.id',$child_ids)
+            ->get();
+
+
+
+        //$queries = DB::getQueryLog();
+        //$last_query = end($queries);
+
         if(empty($item)) {
             return Response::view('error.404', [], 404);
         }
     }
+    //single category
     if(count($request->segments()) < 2) {
         $item = App\Categories::where('slug', $request->segments()[0])->first();
         if(empty($item)) {
             return Response::view('error.404', [], 404);
         }
     }
+     * */
 
 });
 Route::filter('item', function()
@@ -88,7 +145,7 @@ Route::filter('item', function()
 
 Route::get('/{slug}.html', array('before' => 'item', 'uses' => 'ItemsController@show'));
 //Route::get('/{slug}','CategoryController@show');
-Route::get('/{category}/{subcategory?}', array('before' => 'cat', 'uses' => 'CategoryController@show'));
+Route::get('{category}/{subcategory?}', array('before' => 'cat', 'uses' => 'CategoryController@show'));
 //Route::get('/{slug}.html','ItemsController@show');
 
 //Route::model('cat', 'App\Categories');

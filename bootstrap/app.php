@@ -17,6 +17,23 @@ $app = new Illuminate\Foundation\Application(
 
 /*
 |--------------------------------------------------------------------------
+| Detect The Application Environment
+|--------------------------------------------------------------------------
+|
+| Laravel takes a dead simple approach to your application environments
+| so you can just specify a machine name for the host that matches a
+| given environment, then we will automatically detect it for you.
+|
+*/
+
+$env = $app->detectEnvironment(function ()
+{
+    return getenv('APP_ENV') ?: 'local';
+});
+
+
+/*
+|--------------------------------------------------------------------------
 | Create The Application
 |--------------------------------------------------------------------------
 |
@@ -35,6 +52,10 @@ $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
 	'App\Console\Kernel'
 );
+$app->singleton(
+    'Illuminate\Contracts\Debug\ExceptionHandler',
+    'App\Debug\ExceptionHandler'
+);
 
 /*
 |--------------------------------------------------------------------------
@@ -46,5 +67,6 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+
 
 return $app;

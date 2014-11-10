@@ -1,7 +1,7 @@
 <html>
 <head>
 
-    <link rel="stylsheet" href="/css/styles.css"/>
+    <link rel="stylsheet" href="/css/style.css"/>
 </head>
 <body>
     @yield('content')

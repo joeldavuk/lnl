@@ -2,6 +2,10 @@
 
 return [
 
+    /*
+      * log
+      */
+    'log' => 'daily',
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -95,12 +99,14 @@ return [
 
 	'providers' => [
 
+
 		/*
 		 * Application Service Providers...
 		 */
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
+
 
 		/*
 		 * Laravel Framework Service Providers...

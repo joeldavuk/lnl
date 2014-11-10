@@ -50,4 +50,9 @@ $response = $app->make('Illuminate\Contracts\Http\Kernel')->handle(
 	Illuminate\Http\Request::capture()
 );
 
+
+SassCompiler::run("public/scss/", "public/css/");
+
+
+
 $response->send();

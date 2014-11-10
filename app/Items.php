@@ -14,6 +14,11 @@ class Items extends Eloquent {
         return $this->belongsTo('App\Item_Meta','id','item_id');
     }
 
+    public function categories()
+    {
+        return $this->belongsTo('App\Categories','category_id','item_id');
+    }
+
     protected $fillable = [
 
         'title',

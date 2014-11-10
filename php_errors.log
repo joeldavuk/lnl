@@ -1,0 +1,351 @@
+[10-Nov-2014 11:25:02 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(/www/lnl/public/environment.php): failed to open stream: No such file or directory' in /www/lnl/public/index.php:54
+Stack trace:
+#0 /www/lnl/public/index.php(54): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/www/ln...', '/www/lnl/public...', 54, Array)
+#1 /www/lnl/public/index.php(54): {closure}()
+#2 [internal function]: {closure}()
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php(32): call_user_func(Object(Closure))
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php(21): Illuminate\Foundation\EnvironmentDetector->detectWebEnvironment(Object(Closure))
+#5 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(301): Illuminate\Foundation\EnvironmentDetector->detect(Object(Closure), NULL)
+#6 /www/lnl/public/index.php(55): Illuminate\Foundation\Application->detectEnvironment(Object(Closure))
+#7 /www/lnl/server.php(21): require_once(' in /www/lnl/public/index.php on line 54
+[10-Nov-2014 11:25:02 UTC] PHP Fatal error:  {closure}(): Failed opening required '/www/lnl/public/environment.php' (include_path='/www/lnl/vendor/phpunit/php-text-template:/www/lnl/vendor/phpunit/php-file-iterator:/www/lnl/vendor/phpunit/php-timer:.:/usr/local/Cellar/php55/5.5.18/lib/php') in /www/lnl/public/index.php on line 54
+[10-Nov-2014 11:25:02 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:27:11 UTC] PHP Parse error:  syntax error, unexpected '$response' (T_VARIABLE), expecting ',' or ';' in /www/lnl/public/index.php on line 58
+[10-Nov-2014 11:34:50 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:34:50 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:34:54 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:34:54 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:35:18 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:35:18 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:37:26 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:37:26 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:37:29 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:37:29 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:45:05 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:45:05 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:48:12 UTC] PHP Notice:  Undefined index: DB_PASSWORD in /www/lnl/bootstrap/app.php on line 33
+[10-Nov-2014 11:48:12 UTC] PHP Notice:  Undefined index: DB_PASSWORD in /www/lnl/bootstrap/app.php on line 33
+[10-Nov-2014 11:48:12 UTC] PHP Notice:  Undefined index: DB_PASSWORD in /www/lnl/bootstrap/app.php on line 33
+[10-Nov-2014 11:48:48 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 11:48:48 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:05:13 UTC] PHP Notice:  Undefined variable: app in /www/lnl/bootstrap/app.php on line 25
+[10-Nov-2014 12:05:13 UTC] PHP Fatal error:  Call to a member function detectEnvironment() on a non-object in /www/lnl/bootstrap/app.php on line 25
+[10-Nov-2014 12:06:13 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:06:13 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:06:30 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Database\QueryException))
+#5  in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:06:30 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:06:48 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Database\QueryException))
+#5  in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:06:48 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:07:12 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Database\QueryException))
+#5  in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:07:12 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:07:47 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Database\QueryException))
+#5  in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:07:47 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:08:00 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Database\QueryException))
+#5  in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:08:00 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:13:11 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(PDOException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:13:11 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:23:05 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:23:05 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:23:46 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 {main}
+  thrown in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:23:46 UTC] PHP Fatal error:  Uncaught exception 'Illuminate\Container\BindingResolutionException' with message 'Target [Illuminate\Contracts\Debug\ExceptionHandler] is not instantiable.' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:754
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('Illuminate\\Cont...', Array)
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(73): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(120): Illuminate\Foundation\Bootstrap\Handl in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 754
+[10-Nov-2014 12:29:35 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class GrahamCampbell\BootstrapCMS\Debug\ExceptionHandler does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('GrahamCampbell\\...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('GrahamCampbell\\...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('GrahamCampbell\\...', Array)
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(214): Illuminate\Foundation\Application->make('GrahamCampbell\\...', Array)
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(742): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /www/lnl/vendor/l in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:29:35 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class GrahamCampbell\BootstrapCMS\Debug\ExceptionHandler does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('GrahamCampbell\\...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('GrahamCampbell\\...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('GrahamCampbell\\...', Array)
+#3 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(214): Illuminate\Foundation\Application->make('GrahamCampbell\\...', Array)
+#4 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(742): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /www/lnl/vendor/l in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:30:16 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Debug\DebugDisplayer does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('App\\Debug\\Debug...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('App\\Debug\\Debug...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('App\\Debug\\Debug...', Array)
+#3 /www/lnl/app/Debug/ExceptionHandler.php(90): Illuminate\Foundation\Application->make('App\\Debug\\Debug...')
+#4 /www/lnl/app/Debug/ExceptionHandler.php(74): App\Debug\ExceptionHandler->getContent(Object(ErrorException), 500)
+#5 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(104): App\Debug\ExceptionHandler->render(Object(Illuminate\Http\Requ in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:30:16 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Debug\DebugDisplayer does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('App\\Debug\\Debug...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('App\\Debug\\Debug...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('App\\Debug\\Debug...', Array)
+#3 /www/lnl/app/Debug/ExceptionHandler.php(90): Illuminate\Foundation\Application->make('App\\Debug\\Debug...')
+#4 /www/lnl/app/Debug/ExceptionHandler.php(74): App\Debug\ExceptionHandler->getContent(Object(Symfony\Component\Debug\Exception\FatalErrorException), 500)
+#5 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(104): App\Debug\ExceptionHand in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:32:30 UTC] PHP Fatal error:  Interface 'GrahamCampbell\BootstrapCMS\Debug\DisplayerInterface' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 31
+[10-Nov-2014 12:32:30 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Debug\DebugDisplayer does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('App\\Debug\\Debug...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('App\\Debug\\Debug...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('App\\Debug\\Debug...', Array)
+#3 /www/lnl/app/Debug/ExceptionHandler.php(90): Illuminate\Foundation\Application->make('App\\Debug\\Debug...')
+#4 /www/lnl/app/Debug/ExceptionHandler.php(74): App\Debug\ExceptionHandler->getContent(Object(Symfony\Component\Debug\Exception\FatalErrorException), 500)
+#5 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(104): App\Debug\ExceptionHand in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:32:32 UTC] PHP Fatal error:  Interface 'GrahamCampbell\BootstrapCMS\Debug\DisplayerInterface' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 31
+[10-Nov-2014 12:32:32 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class App\Debug\DebugDisplayer does not exist' in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php:745
+Stack trace:
+#0 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(745): ReflectionClass->__construct('App\\Debug\\Debug...')
+#1 /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php(650): Illuminate\Container\Container->build('App\\Debug\\Debug...', Array)
+#2 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(503): Illuminate\Container\Container->make('App\\Debug\\Debug...', Array)
+#3 /www/lnl/app/Debug/ExceptionHandler.php(90): Illuminate\Foundation\Application->make('App\\Debug\\Debug...')
+#4 /www/lnl/app/Debug/ExceptionHandler.php(74): App\Debug\ExceptionHandler->getContent(Object(Symfony\Component\Debug\Exception\FatalErrorException), 500)
+#5 /www/lnl/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(104): App\Debug\ExceptionHand in /www/lnl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 745
+[10-Nov-2014 12:33:15 UTC] PHP Fatal error:  Interface 'App\Debug\DisplayerInterface' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 31
+[10-Nov-2014 12:33:15 UTC] PHP Fatal error:  Class 'Whoops\Run' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 52
+[10-Nov-2014 12:34:18 UTC] PHP Fatal error:  Class 'Whoops\Run' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 52
+[10-Nov-2014 12:34:18 UTC] PHP Fatal error:  Class 'Whoops\Run' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 52
+[10-Nov-2014 12:34:41 UTC] PHP Fatal error:  Class 'Whoops\Run' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 52
+[10-Nov-2014 12:34:41 UTC] PHP Fatal error:  Class 'Whoops\Run' not found in /www/lnl/app/Debug/DebugDisplayer.php on line 52
+[10-Nov-2014 12:36:09 UTC] PHP Fatal error:  Call to undefined method App\Debug\DebugDisplayer::handleException() in /www/lnl/app/Debug/DebugDisplayer.php on line 42
+[10-Nov-2014 12:36:09 UTC] PHP Fatal error:  Call to undefined method App\Debug\DebugDisplayer::handleException() in /www/lnl/app/Debug/DebugDisplayer.php on line 42
+[10-Nov-2014 15:14:09 UTC] PHP Fatal error:  Class 'App\Items_Relationship' not found in /www/lnl/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 864
+[10-Nov-2014 15:15:19 UTC] PHP Fatal error:  Class 'App\Items_Relationship' not found in /www/lnl/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 864
+[10-Nov-2014 15:49:07 UTC] PHP Fatal error:  Cannot access protected property Illuminate\Database\Eloquent\Collection::$items in /www/lnl/app/Http/routes.php on line 89
+[10-Nov-2014 15:56:42 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 124518400 bytes) in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 3
+[10-Nov-2014 16:11:44 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Route::segments() in /www/lnl/app/Http/routes.php on line 37
+[10-Nov-2014 16:12:48 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Route::segments() in /www/lnl/app/Http/routes.php on line 40
+[10-Nov-2014 16:13:09 UTC] PHP Fatal error:  Call to a member function segments() on a non-object in /www/lnl/app/Http/routes.php on line 32
+[10-Nov-2014 16:39:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /www/lnl/app/Http/routes.php on line 51
+[10-Nov-2014 17:11:55 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:11:57 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:12:10 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:13:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /www/lnl/app/Http/Controllers/CategoryController.php on line 87
+[10-Nov-2014 17:14:05 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /www/lnl/app/Http/Controllers/CategoryController.php on line 92
+[10-Nov-2014 17:14:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:14:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:14:50 UTC] PHP Parse error:  syntax error, unexpected ')' in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[10-Nov-2014 17:27:00 UTC] PHP Parse error:  syntax error, unexpected ';' in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 8
+[10-Nov-2014 17:27:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 8

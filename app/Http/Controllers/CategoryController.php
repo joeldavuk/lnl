@@ -76,7 +76,6 @@ class CategoryController extends Controller {
 
 
 
-
         return view('templates.category', compact('item'));
 	}
 

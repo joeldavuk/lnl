@@ -12,9 +12,18 @@ class Categories extends Eloquent {
         'title'
     ];
 
-    public function parents() {
-        return $this->hasMany('category_relationship','category_base_id','id');
+
+
+    public function categoryRelations() {
+        return $this->hasMany('App\Category_Relationship','category_id','id')->with('categoryData');
     }
+
+
+    public function itemData() {
+        return $this->hasMany('App\Item_Relationship','category_id','id');
+    }
+
+
 
 
 }
