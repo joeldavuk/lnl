@@ -8,50 +8,32 @@
 
 //Route::model('categories','App\Categories');
 
-
-
-
 Route::bind('slug', function($slug) {
 
     $items = App\Items::with('meta')->where('slug',$slug)->first();
-
-    if(empty($items)) {
-        return Response::view('error.404', [], 404);
-    }
     return $items;
 
 });
 
-
-
 Route::bind('category', function () {
 
     if(!Request::segment(2)) {
-        /**
-    $item = App\Categories::with(array('categories' => function($query)
-        {
-            $query->where('category_relationship.type_of', '=', 'child');
-        }))->where('slug', Request::segment(1))->first();
-
-
-    return $item;
-         * **/
+        $item = App\Categories::where('slug', Request::segment(1))->first();
+        return $item;
     }
 });
 
 Route::bind('subcategory', function () {
 
+
     if(Request::segment(2)) {
-    $item = App\Categories::with(array('categoryRelations' => function($query)
-        {
-            $query->where('category_relationship.type_of', '=', 'child')->with('categoryData');
-        }))->where('slug', Request::segment(2))->first();
-
-
-    return $item;
+        $item = App\Categories::with(array('categoryChildren' => function($query)
+            {
+                $query->where('category_relationship.type_of', '=', 'child');
+            }))->where('slug', Request::segment(1))->first();
+        return $item;
     }
 });
-
 
 Route::get('/','HomeController@index');
 
@@ -143,10 +125,12 @@ Route::filter('item', function()
 });
 //Route::get('/{slug-a}/{slug-b}','CategoryController@show');
 
-Route::get('/{slug}.html', array('before' => 'item', 'uses' => 'ItemsController@show'));
+
 //Route::get('/{slug}','CategoryController@show');
+Route::get('{slug}.htm','HomeController@index');
+Route::get('{category}/', array('before' => 'cat', 'uses' => 'CategoryController@show'));
 Route::get('{category}/{subcategory?}', array('before' => 'cat', 'uses' => 'CategoryController@show'));
-//Route::get('/{slug}.html','ItemsController@show');
+
 
 //Route::model('cat', 'App\Categories');
 

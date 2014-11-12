@@ -1,9 +1,14 @@
 <?php namespace App\Http\Controllers;
 
 use App\Categories;
+use App\Category_Relationship;
+use App\Item_Relationship;
+use App\Items;
 use Illuminate\Routing\Controller;
 use App\Http\Requests;
+use Illuminate\Http\Response;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
 
 class CategoryController extends Controller {
 
@@ -73,10 +78,46 @@ class CategoryController extends Controller {
         //dd(Items::find(1)->meta);
         // $item->meta = $item->;
         //dd(Items::find(1)->meta);
+       // echo $item->count();
+       // die();
 
+       // $test = $item->with('categoryChildren')->with('categoryData')-with('itemData')->with('items');
+
+
+        $item = Categories::with(array('itemData.items'))->where('slug','test2')->paginate(1);
+
+        $itemCollection = Item_Relationship::paginate(20);
+        dd($itemCollection);
+
+        $users = Paginator::make($item->items, $item->totalItems, 50);
+
+        dd($users);
+
+        foreach($item as $b) {
+            print_r($b);
+        }
+
+       // $x = Items::whereIn('id',$itemArray)->get();
+dd($item->itemData()->items());
+       //dd($x);
+
+        //dd($item->id);
+
+       // $items = Categories::->with('itemData','categoryChildren')->where('id',$item->id)->get();
+
+
+
+        if(empty($item->exists)) {
+
+          //  return view('error.404',[], [], 404);
+        }
 
 
         return view('templates.category', compact('item'));
+
+
+
+       // return view('templates.category', compact('item'));
 	}
 
 	/**

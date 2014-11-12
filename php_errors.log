@@ -349,3 +349,35 @@ Stack trace:
 [10-Nov-2014 17:14:50 UTC] PHP Parse error:  syntax error, unexpected ')' in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
 [10-Nov-2014 17:27:00 UTC] PHP Parse error:  syntax error, unexpected ';' in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 8
 [10-Nov-2014 17:27:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 8
+[12-Nov-2014 12:39:04 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Response' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 80
+[12-Nov-2014 12:41:17 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Response' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 12:41:47 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Response' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 12:42:17 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\Response::view() in /www/lnl/app/Http/Controllers/CategoryController.php on line 82
+[12-Nov-2014 12:42:43 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\Response::view() in /www/lnl/app/Http/Controllers/CategoryController.php on line 82
+[12-Nov-2014 15:31:21 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::first() in /www/lnl/app/Http/routes.php on line 29
+[12-Nov-2014 15:43:15 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Paginator' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 80
+[12-Nov-2014 15:43:50 UTC] PHP Fatal error:  Call to undefined method Illuminate\Contracts\Pagination\Paginator::make() in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 15:44:11 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Paginator' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 15:44:30 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::make() in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 15:59:29 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::getByPage() in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 20
+[12-Nov-2014 15:59:43 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::getByPage() in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 21
+[12-Nov-2014 15:59:45 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::getByPage() in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 21
+[12-Nov-2014 16:03:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /www/lnl/storage/framework/views/bb568d18913d79d418dc38a449693259 on line 21
+[12-Nov-2014 16:05:09 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 90
+[12-Nov-2014 16:16:50 UTC] PHP Fatal error:  Call to a member function with() on a non-object in /www/lnl/app/Http/Controllers/CategoryController.php on line 81
+[12-Nov-2014 16:17:20 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\_dd() in /www/lnl/app/Http/Controllers/CategoryController.php on line 82
+[12-Nov-2014 16:28:43 UTC] PHP Fatal error:  Class 'App\DB' not found in /www/lnl/app/Categories.php on line 31
+[12-Nov-2014 16:29:34 UTC] PHP Fatal error:  Call to a member function addEagerConstraints() on a non-object in /www/lnl/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 408
+[12-Nov-2014 16:29:50 UTC] PHP Fatal error:  Call to a member function addEagerConstraints() on a non-object in /www/lnl/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 408
+[12-Nov-2014 16:29:52 UTC] PHP Fatal error:  Call to a member function addEagerConstraints() on a non-object in /www/lnl/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 408
+[12-Nov-2014 16:45:39 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::get() in /www/lnl/app/Http/Controllers/CategoryController.php on line 84
+[12-Nov-2014 17:07:04 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::links() in /www/lnl/app/Http/Controllers/CategoryController.php on line 91
+[12-Nov-2014 17:15:01 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /www/lnl/app/Http/Controllers/CategoryController.php on line 100
+[12-Nov-2014 17:27:20 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::itemData() in /www/lnl/app/Http/Controllers/CategoryController.php on line 93
+[12-Nov-2014 17:32:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Input' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 88
+[12-Nov-2014 17:33:59 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::getByPage() in /www/lnl/app/Http/Controllers/CategoryController.php on line 90
+[12-Nov-2014 17:38:58 UTC] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /www/lnl/app/Http/Controllers/CategoryController.php on line 88
+[12-Nov-2014 17:39:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\StdClass' not found in /www/lnl/app/Http/Controllers/CategoryController.php on line 89
+[12-Nov-2014 17:39:40 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\StdClass() in /www/lnl/app/Http/Controllers/CategoryController.php on line 89
+[12-Nov-2014 17:41:29 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /www/lnl/app/Http/Controllers/CategoryController.php on line 86
+[12-Nov-2014 17:41:37 UTC] PHP Fatal error:  Call to undefined method Illuminate\Pagination\Paginator::make() in /www/lnl/app/Http/Controllers/CategoryController.php on line 88

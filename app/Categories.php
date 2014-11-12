@@ -14,14 +14,23 @@ class Categories extends Eloquent {
 
 
 
-    public function categoryRelations() {
-        return $this->hasMany('App\Category_Relationship','category_id','id')->with('categoryData');
+    public function categoryChildren() {
+        return $this->hasMany('App\Category_Relationship','category_id','id')->where('category_relationship.type_of', '=', 'child');
+    }
+
+    public function categoryParents() {
+        return $this->hasMany('App\Category_Relationship','category_id','id')->where('category_relationship.type_of', '=', 'parent');
     }
 
 
     public function itemData() {
         return $this->hasMany('App\Item_Relationship','category_id','id');
     }
+    public function itemIds() {
+
+    }
+
+
 
 
 
